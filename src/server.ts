@@ -5,6 +5,7 @@ import * as logger from "morgan";
 import * as path from "path";
 import errorHandler = require("errorhandler");
 import methodOverride = require("method-override");
+import favicon = require("serve-favicon");
 
 import { IndexRoute } from "./routes/index";
 
@@ -73,6 +74,8 @@ export class Server {
     this.app.set("views", path.join(__dirname, "views"));
     this.app.set("view engine", "pug");
 
+
+
     //mount logger
     this.app.use(logger("dev"));
 
@@ -91,9 +94,9 @@ export class Server {
     this.app.use(methodOverride());
 
     // catch 404 and forward to error handler
-    this.app.use(function(err: any, req: express.Request, res: express.Response, next: express.NextFunction) {
-        err.status = 404;
-        next(err);
+    this.app.use(function (err: any, req: express.Request, res: express.Response, next: express.NextFunction) {
+      err.status = 404;
+      next(err);
     });
 
     //error handling

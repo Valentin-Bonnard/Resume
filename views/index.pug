@@ -1,0 +1,528 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Responsive Personal Portfolio vCard Template')
+    meta(name='author', content='Bonnard Valentin')
+    title= title
+    // Web Fonts
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700', rel='stylesheet', type='text/css')
+    // Bootstrap core CSS
+    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    // Font Awesome CSS
+    link(href='css/font-awesome.min.css', rel='stylesheet', media='screen')
+
+    link(href='css/main.min.css', rel='stylesheet')
+    // Custom styles CSS
+    link(href='css/style.css', rel='stylesheet', media='screen')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    link(rel='shortcut icon', href='compressed/ico/favicon.ico')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='compressed/ico/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='compressed/ico/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='compressed/ico/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='compressed/ico/apple-touch-icon-57-precomposed.png')
+  body
+    // Preloader
+    #tt-preloader
+      #pre-status
+        .preload-placeholder
+    // Home Section
+    section#home.tt-fullHeight(data-stellar-vertical-offset='50', data-stellar-background-ratio='0.2')
+      .intro
+        .intro-sub Bonnard Valentin
+        h1
+          | Developpeur 
+          span Back-end
+        p
+          | Je suis un jeune développeur web C# asp.net 
+          br
+          |  Et Javascript/Typescript sur NodeJS
+          br
+        .social-icons
+          ul.list-inline
+            li
+              a(href='https://www.facebook.com/BonnardValentin', target='_blank')
+                i.fa.fa-facebook
+            li
+              a(href='https://twitter.com/deathshot3', target='_blank')
+                i.fa.fa-twitter
+            li
+              a(href='https://github.com/Valentin-Bonnard', target='_blank')
+                i.fa.fa-github
+        // /.social-icons
+      .mouse-icon
+        .wheel
+    // End Home Section
+    // Navigation
+    header.header
+      nav.navbar.navbar-custom(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#custom-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='index.html')
+              img(src='compressed/logo.png', alt='')
+          #custom-collapse.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='#home') Accueil
+              li
+                a(href='#about') A Propos
+              li
+                a(href='#resume') Cv
+              li
+                a(href='#skills') Compètence
+              li
+                a(href='#works') Travaux
+              li
+                a(href='#contact') Contact
+        // .container
+    // End Navigation
+    // About Section
+    section#about.about-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp A Propos
+        .row
+          .col-md-4.col-md-push-8
+            .biography
+              ul
+                li
+                  strong Nom:
+                  |  Bonnard Valentin
+                li
+                  strong Date de naissance:
+                  |  03 Mars 1992
+                li
+                  strong Adresse:
+                  |  43 rue de la Madeleine, Lille
+                li
+                  strong Nationalité:
+                  |  Français
+                li
+                  strong Téléphone:
+                  |  0788461285
+                li
+                  strong Email:
+                  |  valentinbonnard0303@gmail.com
+          // col-md-4
+          .col-md-8.col-md-pull-4
+            .short-info.wow.fadeInUp
+              h3 Objectif
+              p
+                | Une occasion de travailler et de se perfectionner, ainsi que d'être impliqué dans une organisation qui croit à gagner un avantage concurrentiel et à redonner à la communauté. Je développe actuellement une solide expérience dans de développement web. Je me concentre sur les languages C# et javascript afin de construire une bonne expérience utilisateur et de créer un fort intérêt pour mes employeurs. J'espère développer et approfondir mes compétences dans le développement, la connaissance du Web, et devenir un atout honnête à l'entreprise. En tant qu'individu, je suis convaincu que vous me trouverez créatif, drôle et naturellement passionné.
+            .short-info.wow.fadeInUp
+              h3 Ce que je fais ?
+              p
+                | J'ai travaillé sur des project en asp.net core ainsi qu'en javascript. Ceci m'a donné une expérience dans la production de web services, d'api et de site( front ) à plus faible mesure.J'aime créer , avoir un code structuré et élégant.J'ai aussi crée et gérer des base de données relationnel ( Sql ) et des bases Mongo
+              ul.list-check
+                li Restful API 
+                li Mvc 4, 5, 6
+                li .Net 4.5 à 4.6.2
+                li Programmation orienté objet
+                li Normalisation de base de données / gestion
+            .my-signature
+              img(src='compressed/sign.png', alt='')
+            .download-button
+              a.btn.btn-info.btn-lg(href='#contact')
+                i.fa.fa-paper-plane
+                | M'envoyer un message
+              a.btn.btn-primary.btn-lg(href='#')
+                i.fa.fa-download
+                | Télecharger mon cv (pdf)
+        // /.row
+      // /.container
+    // End About Section
+    // Resume Section
+    section#resume.resume-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp Cv
+        .row
+          .col-md-12
+            .resume-title
+              h3 Education
+            .resume
+              ul.timeline
+                li
+                  .posted-date
+                    span.month 2013-2016
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Formation Informatique
+                        span Diplôme bac + 3
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | I have completed UI Engineering degree from ABC University, Boston, USA at feel the charm of existence in this spot, which was created for the.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+                li.timeline-inverted
+                  .posted-date
+                    span.month 2010 - 2013
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Licence Droit
+                        span Facultés Droit et lettres(cursus Droit)
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | From this college of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+                li
+                  .posted-date
+                    span.month 2009 - 2010
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Lycée Européen
+                        span Lycée Européen, Villers-Cotteret, France
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | Baccalauréat Sciences Economiques et Sociales option(Sciences Politiques) au Lycée européen de Villers-Cotterêts (Aisne, Picardie)
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+        // /row
+        .row
+          .col-md-12
+            .resume-title
+              h3 Experience
+            .resume
+              ul.timeline
+                li.timeline-inverted
+                  .posted-date
+                    span.month 2015-2016
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Stage Developpeur C#/Javascript
+                        span Société de developpement de jeu indépendant, Reims
+                      // /timeline-heading
+                      .timeline-body
+                        p Création d'un serveur (NodeJS) pour le jeu. Création du site vitrine en asp.net.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+                li
+                  .posted-date
+                    span.month 2016-2017
+                  // /posted-date
+                  .timeline-panel.wow.fadeInUp
+                    .timeline-content
+                      .timeline-heading
+                        h3 Développeur Web
+                        span Phoceis, Lille
+                      // /timeline-heading
+                      .timeline-body
+                        p
+                          | Apis en asp.net core et en Javascript en utilisant dans ces deux technologies, soit une base Sql ou MongoDb.
+                      // /timeline-body
+                    // /timeline-content
+                  // /timeline-panel
+        // /row
+      // /.container
+    // End Resume Section
+    // Skills Section
+    section#skills.skills-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp Compétences
+        .row
+          .col-md-6
+            .skill-progress
+              .skill-title
+                h3 C#
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='65', aria-valuemin='0', aria-valuemax='100')
+                  span 95%
+              // /.progress
+            // /.skill-progress
+            .skill-progress
+              .skill-title
+                h3 Js/Typescript
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='55', aria-valuemin='0', aria-valuemax='100')
+                  span 80%
+              // /.progress
+            // /.skill-progress
+            .skill-progress
+              .skill-title
+                h3 Html5
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100')
+                  span 75%
+              // /.progress
+            // /.skill-progress
+          // /.col-md-6
+          .col-md-6
+            .skill-progress
+              .skill-title
+                h3 css3
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100')
+                  span 95%
+              // /.progress
+            // /.skill-progress
+            .skill-progress
+              .skill-title
+                h3 MongoDb
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='55', aria-valuemin='0', aria-valuemax='100')
+                  span 80%
+              // /.progress
+            // /.skill-progress
+            .skill-progress
+              .skill-title
+                h3 Sql
+              .progress
+                .progress-bar.six-sec-ease-in-out(role='progressbar', aria-valuenow='65', aria-valuemin='0', aria-valuemax='100')
+                  span 75%
+              // /.progress
+            // /.skill-progress
+          // /.col-md-6
+        // /.row
+        .skill-chart.text-center
+          h3 Plus de compétences
+        .row.more-skill.text-center
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='70', data-color='e74c3c')
+              span.percent
+              .chart-text
+                span Anglais
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='60', data-color='2ecc71')
+              span.percent
+              .chart-text
+                span Bootstrap
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='70', data-color='3498db')
+              span.percent
+              .chart-text
+                span Visual studio 2015 / Code
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='68', data-color='3498db')
+              span.percent
+              .chart-text
+                span Creativité
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='80', data-color='3498db')
+              span.percent
+              .chart-text
+                span Motivation
+          .col-xs-12.col-sm-4.col-md-2
+            .chart(data-percent='90', data-color='3498db')
+              span.percent
+              .chart-text
+                span Ecoute
+      // /.container
+    // End Skills Section
+    // Works Section
+    section#works.works-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp Travaux
+        ul#filter.list-inline
+          li
+            a.active(data-group='all') All
+          li
+            a(data-group='csharp') C#
+          li
+            a(data-group='javascript') Javascript
+          li
+            a(data-group='web') Web
+        .row
+          #grid
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "web", "csharp"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='compressed/works/portfolio-csharp.jpg')
+                      i.fa.fa-search-plus
+                    a(href='https://github.com/Valentin-Bonnard/Soval', target='_blank')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='compressed/works/portfolio-csharp.jpg', alt='image')
+                  .portfolio-info
+                    h3 Website Asp.net
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "web", "csharp"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='compressed/works/portfolio-csharp.jpg')
+                      i.fa.fa-search-plus
+                    a(href='https://github.com/Valentin-Bonnard/Maquom', target='_blank')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='compressed/works/portfolio-csharp.jpg', alt='image')
+                  .portfolio-info
+                    h3 Api Asp.net
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "web", "javascript"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='compressed/works/portfolio-Nodejs.png')
+                      i.fa.fa-search-plus
+                    a(href='https://github.com/Valentin-Bonnard/serveur', target='_blank')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='compressed/works/portfolio-Nodejs.png', alt='image')
+                  .portfolio-info
+                    h3 Serveur pour jeu
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "web", "javascript"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='compressed/works/portfolio-Typescript.png')
+                      i.fa.fa-search-plus
+                    a(href='#', target='_blank')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='compressed/works/portfolio-Typescript.png', alt='image')
+                  .portfolio-info
+                    h3 Actuel site
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+            .portfolio-item.col-xs-12.col-sm-4.col-md-3(data-groups='["all", "web", "csharp"]')
+              .portfolio-bg
+                .portfolio
+                  .tt-overlay
+                  .links
+                    a.image-link(href='compressed/works/portfolio-csharp.jpg')
+                      i.fa.fa-search-plus
+                    a(href='https://github.com/Valentin-Bonnard/Elohim', target='_blank')
+                      i.fa.fa-link
+                  // /.links
+                  img(src='compressed/works/portfolio-csharp.jpg', alt='image')
+                  .portfolio-info
+                    h3 Api Asp.net
+                  // /.portfolio-info
+                // /.portfolio
+              // /.portfolio-bg
+            // /.portfolio-item
+          // /#grid
+        // /.row
+      // /.container
+    // End Works Section
+    // Facts Section
+    section#facts.facts-section.text-center(data-stellar-vertical-offset='50', data-stellar-background-ratio='0.2')
+      .tt-overlay-bg
+        .container
+          .row
+            .col-md-12
+              .count-wrap
+                .col-sm-3.col-xs-6
+                  i.fa.fa-flask
+                  h3.timer 10
+                  p Expérience ( mois ) 
+                .col-sm-3.col-xs-6
+                  i.fa.fa-thumbs-up
+                  h3.timer 8
+                  p Project Finis
+                .col-sm-3.col-xs-6
+                  i.fa.fa-users
+                  h3.timer 7
+                  p Clients
+              // /count-wrap
+            // /.col-md-12
+          // /.row
+        // /.container
+    // End Facts Section
+    // Contact Section
+    section#contact.contact-section.section-padding
+      .container
+        h2.section-title.wow.fadeInUp Prise de contact
+        .row
+          .col-md-6
+            .contact-form
+              strong Envoyez moi un message
+              form(name='contact-form', method='post', action='/send')
+                .form-group
+                  label(for='InputName1') Nom
+                  input#InputName1.form-control(type='text', name='name', required='')
+                .form-group
+                  label(for='InputEmail1') Email
+                  input#InputEmail1.form-control(type='email', name='email', required='')
+                .form-group
+                  label(for='InputSubject') Sujet
+                  input#InputSubject.form-control(type='text', name='subject')
+                .form-group
+                  label(for='InputTextarea') Message
+                  textarea#InputTextarea.form-control(name='message', rows='5', required='')
+                button.btn.btn-primary(type='submit', name='submit') Envoyer le message
+          // /.col-md-6
+          .col-md-6
+            .row.center-xs
+              .col-sm-6
+                i.fa.fa-map-marker
+                address
+                  strong Adresse
+                  |                   43 rue de la madeleine,
+                  br
+                  |                   Lille, France
+                  br
+              .col-sm-6
+                i.fa.fa-mobile
+                .contact-number
+                  strong Portable
+                  |                   (+33) 788461285
+                  br
+            .row
+              .col-sm-12
+                .location-map
+                  #mapCanvas.map-canvas
+        // /.row
+      // /.container
+    // End Contact Section
+    // Footer Section
+    footer.footer-wrapper
+      .container
+        .row
+          .col-md-12
+            .copyright.text-center
+              p © Bonnard Valentin 2017. Tous droits réservés.
+    // End Footer Section
+    // Scroll-up
+    .scroll-up
+      a(href='#home')
+        i.fa.fa-angle-up
+    // Javascript files
+    script(src='js/main.min.js')
+    script(src='bootstrap/js/bootstrap.min.js')
+    script(src='http://a.vimeocdn.com/js/froogaloop2.min.js')
+    script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+	 
+
