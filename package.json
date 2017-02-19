@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon ./bin/www",
     "grunt": "grunt",
-    "start": "node ./bin/www",
+    "start": "node --harmony ./bin/www",
     "postinstall": "npm run grunt"
   },
   "keywords": [
