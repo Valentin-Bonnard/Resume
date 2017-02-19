@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon ./bin/www",
     "grunt": "grunt",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "postinstall": "npm run grunt"
   },
   "keywords": [
     "resume"
@@ -35,6 +36,7 @@
     "grunt-contrib-cssmin": "^1.0.0",
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-clean": "^1.0.0",
+    "grunt-cli": "0.1.13",
     "grunt-ts": "^6.0.0-beta.3",
     "nodemon": "^1.11.0",
     "typescript": "^2.0.8"
