@@ -86,7 +86,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: "./public",
-            src: ["bootstrap/**", "fonts/**", "css/style.css", "css/font-awesome.min.css"],
+            src: ["bootstrap/**", "fonts/**", "css/style.css", "css/font-awesome.min.css", "images/ico/favicon.ico"],
             dest: "./dist/public"
           },
         ]
