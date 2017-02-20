@@ -213,14 +213,14 @@ jQuery(function ($) {
         $(".video-container").fitVids();
     }());
 
-
+/*
 
     // -------------------------------------------------------------
     // Vidio auto play
     // -------------------------------------------------------------
     (function () {
     
-    /* Vimeo API: http://developer.vimeo.com/player/js-api */
+    /* Vimeo API: http://developer.vimeo.com/player/js-api 
     
         var iframe = document.getElementById('nofocusvideo');
         // $f == Froogaloop
@@ -236,7 +236,7 @@ jQuery(function ($) {
     }());
 
 
-
+*/
 
     // -------------------------------------------------------------
     // STELLAR FOR BACKGROUND SCROLLING
