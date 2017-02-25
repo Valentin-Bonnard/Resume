@@ -36,11 +36,12 @@ body{
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-overflow-scrolling: touch;
-    -webkit-font-smoothing: antialiased !important;
+    -webkit-font-smoothing: antialiased !important; 
 }
 
 body, html{
     overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 /* Link style

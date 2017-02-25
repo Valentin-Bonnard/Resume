@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const encryptPassword = "1d70a2c03fe89160c2fbc5371bc9ed";
 const encrypEmail = "0970bac830f28a61c2fdc5684382bb1602799689ed16c14dc445c06a12";
 
-const transport  = nodemailer.createTransport({
+const transport = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
         user: "valentinbonnard0303@gmail.com",
@@ -21,9 +21,11 @@ export function sendEmail(to, subject, message) {
         html: message,
     };
     transport.sendMail(mailOptions, (error) => {
-        if (error) 
-            console.log(error);
-        console.log('Message sent : ' + mailOptions);
+        if (error) {
+            return error;
+        } else {
+            return true;
+        }
     })
     transport.close();
 };

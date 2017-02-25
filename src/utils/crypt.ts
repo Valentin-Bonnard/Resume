@@ -4,8 +4,6 @@ const algorithm = 'aes-256-ctr';
 
 const password = process.env.cryptokey || 'secretPassword';
 
-console.log(password);
-
 export function encrypt(text) {
     const cipher = crypt.createCipher(algorithm, password);
     let crypted = cipher.update(text, 'utf8', 'hex');

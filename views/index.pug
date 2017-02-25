@@ -128,8 +128,6 @@ html(lang='en')
                 li .Net 4.5 à 4.6.2
                 li Programmation orienté objet
                 li Normalisation de base de données / gestion
-            .my-signature
-              img(src='compressed/sign.png', alt='')
             .download-button
               a.btn.btn-info.btn-lg(href='#contact')
                 i.fa.fa-paper-plane
@@ -468,20 +466,20 @@ html(lang='en')
           .col-md-6
             .contact-form
               strong Envoyez moi un message
-              form(name='contact-form', method='post', action='/send')
+              form(name='contact-form', method='post', action='/send', id='Form')
                 .form-group
                   label(for='InputName1') Nom
-                  input#InputName1.form-control(type='text', name='name', required='')
+                  input#InputName1.form-control(type='text', name='name')
                 .form-group
                   label(for='InputEmail1') Email
-                  input#InputEmail1.form-control(type='email', name='email', required='')
+                  input#InputEmail1.form-control(type='email', name='email')
                 .form-group
                   label(for='InputSubject') Sujet
                   input#InputSubject.form-control(type='text', name='subject')
                 .form-group
                   label(for='InputTextarea') Message
-                  textarea#InputTextarea.form-control(name='message', rows='5', required='')
-                button.btn.btn-primary(type='submit', name='submit') Envoyer le message
+                  textarea#InputTextarea.form-control(name='message', rows='5')
+                button.btn.btn-primary(type='submit') Envoyer le message
           // /.col-md-6
           .col-md-6
             .row.center-xs
@@ -519,8 +517,9 @@ html(lang='en')
       a(href='#home')
         i.fa.fa-angle-up
     // Javascript files
+    script(src="/socket.io/socket.io.js")
     script(src='js/main.min.js')
-    script(src='https://maps.googleapis.com/maps/api/js?libraries=places&key=' + key)
+    script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false')
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
 	 
 

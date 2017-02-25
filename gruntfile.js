@@ -5,7 +5,11 @@ module.exports = function (grunt) {
 
     concat: {
       css: { // Task
-        src: ['public/css/animate.css', 'public/css/responsive.css', 'public/css/magnific-popup.css'], // Src matches are relative to this path
+        src: ['public/css/animate.css'
+          , 'public/css/responsive.css'
+          , 'public/css/magnific-popup.css'
+          , 'node_modules/formvalidation/dist/css/formValidation.css'
+          , 'node_modules/toastr/build/toastr.css'], // Src matches are relative to this path
         dest: './dist/public/css/main.css' // destination -- will be created
       },
       js: { // Task
@@ -13,6 +17,8 @@ module.exports = function (grunt) {
           , 'public/js/jquery.sticky.js', 'public/js/smoothscroll.js', 'public/js/wow.min.js'
           , 'public/js/jquery.countTo.js', 'public/js/jquery.inview.min.js', 'public/js/jquery.easypiechart.js'
           , 'public/js/jquery.shuffle.min.js', 'public/js/jquery.magnific-popup.min.js', 'public/js/jquery.fitvids.js'
+          , 'node_modules/formvalidation/dist/js/formValidation.min.js', 'node_modules/formvalidation/dist/js/framework/bootstrap.min.js'
+          , 'node_modules/toastr/toastr.js'
           , 'public/js/scripts.js'],
         dest: './dist/public/js/main.js'
       }

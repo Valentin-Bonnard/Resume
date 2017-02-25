@@ -29,9 +29,17 @@ export class IndexRoute extends BaseRoute {
     console.log("[IndexRoute::create] Creating send route.");
 
     router.post("/send", (req: Request, res: Response, next: NextFunction) => {
-      var message = "e";
+      var io = req.app.get('socketio');
+      var message = req.body.message + "<br /> de la part de : " + req.body.email;
+
       mailer.sendEmail('valentinbonnard0303@gmail.com', req.body.subject, message);
-      console.log('Email sent');
+      if (true) {
+        io.emit('Send');
+        setTimeout(function () { new IndexRoute().index(req, res, next); }, 3100);
+      }
+      if (!true) {
+        io.emit('NotSend');
+      }
     });
   }
 
@@ -62,5 +70,5 @@ export class IndexRoute extends BaseRoute {
     //render template
     this.render(req, res, "index");
   }
-  
+
 }
