@@ -1,1 +1,0 @@
-src\config\config.ts src\routes\index.ts src\routes\route.ts src\server.ts src\utils\crypt.ts src\utils\email.ts src\.baseDir.ts --removeComments --target ES6 --module commonjs --outDir ./dist

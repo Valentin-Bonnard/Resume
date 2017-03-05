@@ -420,7 +420,7 @@ jQuery(function ($) {
     // SOcket io Client-Side
     // -------------------------------------------------------------
 
-    var socket = io.connect('http://localhost:8080' || window.location.hostname);
+    var socket = io();
     $(document).ready(function () {
         socket.on('message', function (message) {
             toastr.info('Vous étes bien connecté', { timeOut: 1500 });
