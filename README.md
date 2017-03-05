@@ -4,7 +4,7 @@ NodeJs_Typescript_Resume
 # TypeScript 2 + Express + Node.js
 
 This is a repository to go with my article on creating an Express web application using TypeScript 2.
-For now, I use pug but after testing I go to Angular 2.
+For now, I use pug but after testing I go to React js , extend project ( 1 api back - end  + front) .
 
 ## Install
 
