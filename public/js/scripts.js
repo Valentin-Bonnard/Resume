@@ -185,7 +185,7 @@ jQuery(function ($) {
             $grid.shuffle('shuffle', groupName);
         });
 
-
+    
     }());
 
 
